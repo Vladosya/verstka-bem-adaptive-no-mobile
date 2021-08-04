@@ -1,0 +1,511 @@
+@import "./zeroing.scss";
+
+$screen-xl-max: 1399px;
+$screen-lg-max: 1199px;
+$screen-md-max: 991px;
+$screen-sm-max: 767px;
+$screen-xs-max: 575px;
+$screen-s-max: 375px;
+
+$screen-s-min: 376px;
+$screen-sm-min: 576px;
+$screen-md-min: 767px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+
+.section-inner {
+  margin: 0 auto;
+  max-width: 1445px;
+}
+
+.section-header {
+  max-width: 943.61px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.section-header-content {
+  padding-top: 32.99px;
+
+  &__line {
+    margin-top: 31.92px;
+    max-width: 940.6px;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 25.99px;
+  }
+}
+
+.section-header-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link:first-child a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+  }
+
+  &__link > a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+  }
+
+  @media (max-width: $screen-md-max) {
+    padding: 0 5px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0 15px;
+  }
+}
+
+.section-under-header {
+  margin-top: 39.69px;
+
+  @media (max-width: $screen-md-max) {
+    margin-top: 35.69px;
+  }
+}
+
+.under-header-info {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    max-width: 123.51px;
+    font-size: 47.3392px;
+    line-height: 59px;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 40.3392px;
+      line-height: 50px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 35.3392px;
+    }
+  }
+
+  &__profession {
+    margin-left: 297.23px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+  }
+
+  &__languages {
+    margin-left: 350.83px;
+  }
+
+  @media (max-width: $screen-md-max) {
+    justify-content: space-between;
+    padding: 0 5px;
+
+    &__profession {
+      margin-left: 0;
+    }
+
+    &__languages {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0 15px;
+  }
+}
+
+.under-header-logo {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 104.06px 0;
+
+  @media (max-width: $screen-md-max) {
+    margin: 35.69px 0 35.69px 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    img {
+      width: 767px;
+    }
+  }
+}
+
+.section-about {
+  margin: 0 auto;
+  background: #f6f6f6;
+}
+
+.section-about-content {
+  max-width: 485.34px;
+  margin: 0 auto;
+  padding: 120.25px 0 107px 0;
+
+  &__title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+  }
+
+  &__text_top {
+    margin-top: 20px;
+  }
+
+  &__text_center {
+    margin-top: 48px;
+  }
+
+  &__text_down {
+    margin-top: 48px;
+  }
+
+  @media (max-width: $screen-md-max) {
+    padding: 90px 0 90px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 60px 0 60px 0;
+  }
+}
+
+.section-skills {
+  margin: 0 auto;
+}
+
+.section-skills-content {
+  margin: 0 auto;
+  padding: 91px 0 110.06px 0;
+  max-width: 932px;
+
+  &__title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+  }
+
+  &__text {
+    margin-top: 69.1px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+  }
+
+  @media (max-width: $screen-md-max) {
+    padding: 71px 0 100.06px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 61px 0 80.06px 0;
+  }
+}
+
+.section-skills-programs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83.49px;
+
+  @media (max-width: $screen-md-max) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.section-skills-program {
+  margin-left: 91px;
+  text-align: center;
+
+  &__img {
+    @media (max-width: $screen-xs-max) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__name {
+    margin-top: 24.21px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 20.21px;
+    }
+  }
+
+  &__stars {
+    margin-top: 40.41px;
+
+    img {
+      margin-right: 9px;
+    }
+
+    img:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 30.41px;
+    }
+  }
+
+  &__stars-last {
+    margin-top: 56.96px;
+
+    img {
+      margin-right: 9px;
+    }
+
+    img:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    margin-left: 0;
+    flex-basis: 45%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .section-skills-program:nth-child(3) {
+    margin-top: 50px;
+  }
+
+  .section-skills-program:nth-child(4) {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .section-skills-program:nth-child(2) {
+    margin-top: 50px;
+  }
+  .section-skills-program:nth-child(3) {
+    margin-top: 50px;
+  }
+
+  .section-skills-program:nth-child(4) {
+    margin-top: 50px;
+  }
+}
+
+.section-skills-program:first-child {
+  margin-left: 0;
+}
+
+.section-portfolio {
+  margin: 0 auto;
+  background: #f6f6f6;
+}
+
+.section-portfolio-content {
+  margin: 0 auto;
+  padding: 112.93px 0 96.07px 0;
+  max-width: 936.24px;
+
+  &__title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+  }
+
+  &__img_woman {
+    margin-top: 47px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 79.09px;
+      text-align: center;
+
+      img {
+        width: 700px;
+        height: 360px;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      img {
+        width: 95%;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 59.09px;
+    }
+  }
+
+  &__text {
+    margin-top: 44.88px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 24.88px;
+    }
+  }
+
+  &__img_reebok {
+    margin-top: 99.09px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 79.09px;
+      text-align: center;
+
+      img {
+        width: 700px;
+        height: 360px;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      img {
+        width: 95%;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 59.09px;
+    }
+  }
+
+  &__img_camera {
+    margin-top: 99.08px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 79.09px;
+      text-align: center;
+
+      img {
+        width: 700px;
+        height: 360px;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      img {
+        width: 95%;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 59.09px;
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    padding: 92.93px 0 76.07px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 72.93px 0 56.07px 0;
+  }
+}
+
+.section-contacts {
+  margin: 0 auto;
+}
+
+.section-contacts-content {
+  margin: 0 auto;
+  padding: 114.24px 0 123.19px 0;
+  max-width: 343px;
+
+  &__title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+  }
+
+  &__text {
+    margin-top: 20.03px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+  }
+
+  &__btn {
+    margin-top: 29.6px;
+    text-align: center;
+
+    button {
+      border-radius: 30px;
+      width: 180.5px;
+      height: 42px;
+      background: #070707;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 86.64px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 66.64px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 46.64px;
+    }
+  }
+
+  &__info {
+    margin-top: 45.98px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+  }
+
+  @media (max-width: $screen-md-max) {
+    padding: 94.24px 0 103.19px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 54.24px 0 63.19px 0;
+  }
+}
